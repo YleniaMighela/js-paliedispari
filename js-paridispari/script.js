@@ -31,7 +31,7 @@ console.log(sommaNumeri);
 
 // OUTPUT
 // Dichiariamo chi ha vinto
-if(utentePariODispari === pariODispari(sommaNumeri)) {
+if(numeroUtente === pariODispari(sommaNumeri)) {
     console.log("Hai vinto");
     
 } else{
