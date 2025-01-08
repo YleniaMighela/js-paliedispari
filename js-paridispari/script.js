@@ -29,22 +29,41 @@ let sommaNumeri = numeroUtente + numRandomPc1to5();
 console.log(sommaNumeri);
 
 
+// OUTPUT
+// Dichiariamo chi ha vinto
+if(utentePariODispari === pariODispari(sommaNumeri)) {
+    console.log("Hai vinto");
+    
+} else{
+    console.log("Hai perso");
+    
+}
+
+
 // FUNZIONI
 // Generiamo un numero random (sempre da 1 a 5) per il computer
 
 function numRandomPc1to5() {
     let numeroPc = Math.floor(Math.random() *5) + 1;
     console.log(numeroPc);
-    
-
-return numeroPc
+    return numeroPc;
     
 }
 
-
-
 // La somma dei due numeri sarà pari o dispari
 
+function pariODispari (risultatoSomma) {
+   
 
-// OUTPUT
-// Dichiariamo chi ha vinto
+    if(risultatoSomma % 2 === 0) {
+         
+       return "è pari";
+    }else {
+        return  "è dispari";
+
+    }
+   
+
+
+}
+
